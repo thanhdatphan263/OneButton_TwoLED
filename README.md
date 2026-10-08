@@ -2,7 +2,7 @@
 
 By Phan Thành Đạt
 
-*Dùng cho bài tập phát triển ứng dụng IoT*
+
 
 ## Mục đích
 
@@ -26,42 +26,14 @@ Trong dự án sử dụng board phát triển ESP32 DevKit V1, một LED ngoài
 ### LED2 ngoài
 
 LED2 được mắc thêm trên test board và kết nối với GPIO4.
-
-Kết nối phần cứng:
-
-- GPIO4 → điện trở 220Ω → chân dương (chân dài) của LED2.
-- Chân âm (chân ngắn) của LED2 → GND.
-
 LED2 có active level = HIGH.
 
 ### Nút nhấn ngoài
 
 Nút nhấn được kết nối với GPIO5.
-
-Kết nối:
-
-- Một chân nút nhấn → GPIO5.
-- Chân còn lại → GND.
-
 Nút nhấn sử dụng mức tác động LOW và sử dụng điện trở kéo lên nội của ESP32.
 
-## Sơ đồ kết nối
 
-| Thiết bị | Chân ESP32 | Kết nối |
-|---|---|---|
-| LED1 (built-in) | GPIO2 | LED tích hợp trên ESP32 DevKit V1 |
-| LED2 (ngoài) | GPIO4 | GPIO4 → R 220Ω → LED2 → GND |
-| Nút nhấn | GPIO5 | GPIO5 → nút nhấn → GND |
-
-Sơ đồ tổng quát:
-
-    ESP32 DevKit V1
-
-    GPIO2 ───────── LED1 (built-in)
-
-    GPIO4 ─── 220Ω ─── LED2 ─── GND
-
-    GPIO5 ─── Nút nhấn ─── GND
 
 ## Yêu cầu chức năng
 
